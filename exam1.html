@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>Account Setting</title>
+        <link href="stylee1.css" type="text/css" rel="stylesheet"/>
+
+        <script  type="text/javascript">
+function fun1(x){
+debugger;
+
+document.getElementById("NewJob")
+
+}
+function fun2() {
+    debugger;
+  var x=document.getElementById("JobList")
+    document.createElement("div")}
+
+
+function dall(){
+    All();
+  document.getElementById("DesignJobs")
+  document.getElementById("DevelopmentJobs")
+
+} 
+function fun3(){
+var x = document.getElementById("JobType").value;
+  document.getElementById("JobType")+ x;
+}
+
+function fun4(x){    
+    
+
+}
+
+
+
+
+
+
+
+        </script>
+    
+    </head>
+    <body>
+<div class="ContentBox">
+<div class="Menu">
+<div class="MenuItems" >
+    <span class="MenuText" >New Job</span>
+</div>
+<div class="MenuItems" >
+    <span class="MenuText" >Job List</span>
+</div>
+</div>
+<div class="Content" >
+
+    <div id="NewJob" class="ContentDev" onclick="fun2()">
+
+
+    <div class="ContentRow">
+    <span>
+        Job Title
+    </span>
+    <div class="Row">
+        <input type="text" id="txtJobTitle" />
+    </div>
+</div>
+<div class="ContentRow">
+    <span>
+        Type of Job
+    </span>
+    <div class="Row">
+        <select class="FormCountrol" id="JobType"  onchange="fun3()">
+            <option>Design</option>
+            <option>Development</option>
+        </select>
+    </div>
+</div>
+<div class="ContentRow">
+    <span>
+        Location
+    </span>
+    <div class="Row">
+        <select class="FormCountrol" id="ddlJobLocation" onchange="fun3()" >
+            <option>USA</option>
+            <option>Jordan</option>
+        </select>
+    </div>
+</div>
+<div class="actionBar">
+    <div class="SaveChangesBox">
+        <button class="btn ButtonSubmit" >Save Changes</button>
+    </div>
+    <div class="CancelBox">
+        <button class="btn btn-default" >Cancel</button>
+    </div>
+</div>
+</div>
+
+
+
+<div id="JobList" class="ContentDev" style="display: none;" onclick="fun1(this)">
+
+
+    <div class="ContentRow">
+        <span>
+            Location
+        </span>
+        <div class="Row">
+            <select class="FormCountrol" id="JobLocation" style="width: 30%;" onchange="fun3()">
+                <option>ALL</option>
+                <option>USA</option>
+                <option>Jordan</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="SubTitleBlock">
+        <span class="SubTitleText">Design</span>
+    </div>
+    <div id="DesignJobs">
+    <div class="ContentRow">
+        <div class="Row">
+            <div class="TasksBox">
+                <span class="JobElementTitle">Senior Graphic Designer</span>
+                <span class="JobElementType">Full Time</span>
+                <span class="JobElementLocation">USA</span>
+            </div>
+        </div>
+    </div>
+    <div class="ContentRow">
+        <div class="Row">
+            <div class="TasksBox">
+                <span class="JobElementTitle">Senior Graphic Designer</span>
+                <span class="JobElementType">Full Time</span>
+                <span class="JobElementLocation">Jordan</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="SubTitleBlock">
+    <span class="SubTitleText">Development</span>
+</div>
+<div id="DevelopmentJobs">
+<div class="ContentRow">
+    <div class="Row">
+        <div class="TasksBox">
+            <span class="JobElementTitle">.NET Developer</span>
+            <span class="JobElementType">Full Time</span>
+            <span class="JobElementLocation">Jordan</span>
+        </div>
+    </div>
+</div>
+<div class="ContentRow">
+    <div class="Row">
+        <div class="TasksBox">
+            <span class="JobElementTitle">.NET Developer</span>
+            <span class="JobElementType">Full Time</span>
+            <span class="JobElementLocation">USA</span>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+</div>
+
+  
+  
+</div>
+</div>
+
+
+    </body>
+</html>
